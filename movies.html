@@ -112,8 +112,8 @@ if(this.readyState==4 && this.status==200)
      console.log(val.poster_path);
 
  document.getElementById("sname").innerHTML=newq; 
- document.getElementById("rate").innerHTML=rrate; 
- document.getElementById("des").innerHTML=ddis; 
+ document.getElementById("rate").innerHTML="Rating : "+rrate+"/10"; 
+ document.getElementById("des").innerHTML="<h3>"+"OverView&nbsp"+"</h3>"+ddis; 
      var patq=val.poster_path;
      var url="https://image.tmdb.org/t/p/w500"+patq;
      console.log(url);
